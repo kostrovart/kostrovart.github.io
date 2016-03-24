@@ -1,6 +1,6 @@
 #kostrovart
 
-This this only examples of html/css code on origin site (kostrovrt.github.io)
+This this only examples of html/css code on origin site [kostrovrt.github.io](kostrovrt.github.io)
 
 
 ## Creator
