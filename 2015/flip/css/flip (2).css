@@ -1,0 +1,132 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/art\/Desktop\/Projects\/Frontend_test\/scss\/flip\.scss}line{font-family:\000034}}
+* {
+  margin: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/art\/Desktop\/Projects\/Frontend_test\/scss\/flip\.scss}line{font-family:\000039}}
+header, nav, main, article, aside, footer {
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/art\/Desktop\/Projects\/Frontend_test\/scss\/flip\.scss}line{font-family:\0000313}}
+body {
+  /*	font-family: DejaVu_Sans;*/
+  background: #FFF; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/art\/Desktop\/Projects\/Frontend_test\/scss\/flip\.scss}line{font-family:\0000319}}
+.container {
+  width: 1920px;
+  height: 1080px;
+  position: absolute;
+  margin: auto;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/art\/Desktop\/Projects\/Frontend_test\/scss\/flip\.scss}line{font-family:\0000330}}
+h1 {
+  font-size: 3em;
+  margin: .5em 0;
+  text-transform: lowercase;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/art\/Desktop\/Projects\/Frontend_test\/scss\/flip\.scss}line{font-family:\0000337}}
+h2 {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/art\/Desktop\/Projects\/Frontend_test\/scss\/flip\.scss}line{font-family:\0000341}}
+a {
+  color: inherit; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/art\/Desktop\/Projects\/Frontend_test\/scss\/flip\.scss}line{font-family:\0000345}}
+p {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/art\/Desktop\/Projects\/Frontend_test\/scss\/flip\.scss}line{font-family:\0000347}}
+  p a, p strong, p b {
+    color: #FFF; }
+
+/*The end of base styles*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/art\/Desktop\/Projects\/Frontend_test\/scss\/flip\.scss}line{font-family:\0000354}}
+.panel {
+  float: left;
+  width: 380px;
+  height: 1080px;
+  position: relative;
+  -webkit-perspective: 1000px;
+  perspective: 1000px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/art\/Desktop\/Projects\/Frontend_test\/scss\/flip\.scss}line{font-family:\0000362}}
+  .panel .panel_front {
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: inherit;
+    height: inherit;
+    background: #FFF;
+    text-align: center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.9);
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /* -- transition is the magic sauce for animation -- */
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/art\/Desktop\/Projects\/Frontend_test\/scss\/flip\.scss}line{font-family:\0000389}}
+  .panel:hover .panel_front {
+    z-index: 9;
+    border-color: #eee;
+    background: #FFF;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/art\/Desktop\/Projects\/Frontend_test\/scss\/flip\.scss}line{font-family:\0000397}}
+  .panel .panel_back {
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    width: inherit;
+    height: inherit;
+    background: #FFF;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    -webkit-transform: rotateY(-180deg);
+    /* setting to 180 causes an unnatural-looking half-flip */
+    transform: rotateY(-179deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /* -- transition is the magic sauce for animation -- */
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/art\/Desktop\/Projects\/Frontend_test\/scss\/flip\.scss}line{font-family:\00003121}}
+  .panel:hover .panel_back {
+    z-index: 10;
+    background: #FFF;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg)
+    /*     -webkit-transform: rotateX(0deg) rotateY(0deg);
+        -moz-transform: rotateX(0deg) rotateY(0deg);
+        transform: rotateX(0deg) rotateY(0deg);
+     */ }
+
+/* -- make sure to declare a default for every property that you want animated -- */
+/* -- general styles, including Y axis rotation -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/art\/Desktop\/Projects\/Frontend_test\/scss\/flip\.scss}line{font-family:\00003135}}
+.footer {
+  position: absolute;
+  width: 1920px;
+  height: 212px;
+  z-index: 11;
+  background: #1a48a6;
+  opacity: 0.7;
+  -webkit-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  -moz-opacity: 0.7;
+  filter: alpha(opacity=70); }

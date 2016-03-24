@@ -1,0 +1,275 @@
+@charset "iso-8859-1";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	}
+	
+header,
+nav,
+section,
+article,
+aside,
+footer {
+  display: block;
+}
+body
+{
+	background-color:#FFF;
+}	
+
+.container /* The big block contained a lot of things. I mean all of them. Its main role is to center page */
+	{
+		max-width: 1024px;
+		min-width: 1024px;
+		width: 1024px;
+		margin: 0 auto;
+		background: #FFF;
+		overflow: hidden;
+		}
+		.send-blue {
+			display: block;
+			width: 183px;
+			height: 25px;
+			padding: 10px 16px;
+			color: #FFF;
+			outline: solid 1px #FFF;
+			background: #339999;
+			text-decoration: none;
+			text-align: center;
+			font: 20px Tahoma, sans-serif;
+			margin: 15px auto;
+			}
+		.send-blue:hover{
+			background: #99CCCC;
+			color: #C2E0E0;
+			}
+		a.send-orange {
+			display:table-cell;
+			width: 183px;
+			height: 25px;
+			padding: 10px 16px;
+			margin: 25px auto;
+			color: #FFF;
+			background: #FF8017;
+			text-decoration: none;
+			text-align: center;
+			font: 20px Tahoma, sans-serif;
+			}
+		a.send-orange:hover{
+			background: #FFBF8B;
+			}
+header {
+    width: auto; 
+    color: #777;
+    text-align: left;
+    margin-top: 50px;
+	}
+		header h4 a,
+		header h2 a,
+	   header h3  {
+			font-family: Tahoma, sans-serif;
+			color: #339999;
+			font-weight: normal;
+			}
+		header h2 a:hover,
+		header h4 a:hover {
+			color: #99CCCC;
+			font-weight: normal;
+			}
+		header h1 { /* Company slogan */
+			margin-left:20px;
+		   font: 14px Tahoma, sans-serif;
+			font-weight: normal;
+			}
+		header h2 a {
+			font-size:14px;
+			margin:0 5px;
+			}
+		header h3 {/* Company phone style */
+			font-size:22px;
+			margin:0 7px;
+			}		
+		header h4 { /* Company email style */
+			font-size:12px;
+			float: right;
+			margin-top:5px;
+			}
+		#search {
+			margin:0px;
+			padding: 0;
+			height:28px;
+			width:225px;
+			background: white;
+			border:1px #CDEBEB solid;
+			}
+			input[type="search"] {
+			border: none; 
+			background: #FFF;
+			outline: none;
+			-webkit-appearance: none; 
+			width: 190px; 
+			height:28px;
+			vertical-align: top;
+			color: #AAA;
+			font: 12px Tahoma, sans-serif;
+			}
+			input[type="submit"] {
+			width: 27px;
+			height: 27px;
+			border: none;
+			background: url(../i/search.gif) no-repeat right center;
+			cursor: pointer;
+			}	
+/* The end of header */
+
+#topMenu table {
+	margin: 45px 0 10px 0;
+	width: 976px;
+	border: none;
+	}
+#topMenu table td {
+	text-align: center;
+	font-family: Tahoma, sans-serif;
+	}
+	
+		#topMenu table a {
+			color: #339999;
+			text-decoration: none;
+					}
+		#topMenu table a:hover {
+			color: #99CCCC;
+			text-decoration: none;
+		}
+#head-block {
+	width: 976px;
+	height: 280px;
+	background: url(../i/bg-head-block.gif);
+	}
+	#head-block table {
+		width: 976px;
+		padding: 0;
+		height: 280px;
+		}
+	#head-block	td {
+		vertical-align: top;
+		padding-left: 50px;
+		
+	}
+	#head-block h2 {
+		margin-top: 45px;
+		color: #FFF;
+		font: 22px Tahoma, sans-serif;
+	}
+	#head-block li>a,
+	#head-block ul {
+		text-decoration: none;
+		color: #FFF;
+		font: 14px Tahoma, sans-serif;
+		}
+	#head-block li a:hover {
+		text-decoration:underline;
+		}	
+/* Central block starts here */
+
+#central-block {
+	width: 976px;
+	border: none;
+	padding: 0;
+	margin-top: 33px;
+	}
+	#central-block td {
+		vertical-align: top;
+		}
+		.catalog {
+			width: 200px;
+			height: 200px;
+		 /*	outline:1px #CDEBEB solid; */
+			float: left;
+			position: relative;
+			margin: 0 3px 20px 3px;
+			}
+			.catalog:hover {
+			outline:1px #CDEBEB solid;
+		/*	outline:1px #339999 solid; */
+			}
+			.catalog span {
+			position: absolute;
+			display:table-row;
+			top: 5px;
+			left: 0px;
+			width: 200px;
+			text-align: center;
+			}	
+			.catalog a {
+			color: #777;
+			text-decoration: none;
+			font: 14px Tahoma, sans-serif;
+			}
+	#obj {
+		width:267px;
+		background: #FFD580;
+		padding: 33px 25px 0 25px;
+		}
+		#obj h1 {
+			color: #339999;
+			font: 16px Tahoma, sans-serif;
+			font-weight: bold;
+			}
+		#obj img {
+			display: block;
+			margin: 20px auto;
+			}
+		#obj ul {
+			margin-left: 30px;
+			color: #FFF;
+			font: 14px Tahoma, sans-serif;
+			text-decoration: none;
+			}
+		#obj ul li a {
+			color: #FFF;
+			font: 14px Tahoma, sans-serif;
+			text-decoration: none;
+		}
+		#obj ul li a:hover {
+			text-decoration:underline;
+		}
+footer {
+	width: 1280px;
+	background: #226078;
+	margin-top: 50px;
+	padding: 20px;
+	overflow: hidden;
+	}
+footer ul {
+	width: 1280px;
+}
+footer ul li {
+	display: table-cell;
+	list-style: none;
+	width: 1280px;
+	padding: 0 10px;
+	}	
+		footer p,
+		footer p a {
+		color:#FFF;	
+		font:12px Tahoma, Helvetica, sans-serif;
+		text-decoration:none;
+		}
+		footer p a:hover {
+		color:#093762;
+		text-decoration:underline;		
+		}
+		footer td {
+		vertical-align:top;
+		}
+
+#underFooter h1{
+	padding:10px 100px;
+	font:16px Tahoma, Helvetica, sans-serif;
+	color:#777;
+	text-align: center;
+	display:block;
+	float:left;
+	}
+	

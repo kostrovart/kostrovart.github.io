@@ -1,0 +1,70 @@
+.panel {
+  float: left;
+  width: 383px;
+  height: 1080px;
+  position: relative;
+  -webkit-perspective: 2000px;
+  perspective: 2000px; }
+  .panel .panel_front {
+    float: none;
+    border: 1px #7f7f7f solid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: inherit;
+    height: inherit;
+    background: #FFF;
+    text-align: center;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out; }
+  .panel:hover .panel_front {
+    z-index: 9;
+    background: #FFF;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg); }
+  .panel .panel_back {
+    float: none;
+    position: absolute;
+    border: 1px #aaaaaa solid;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    width: inherit;
+    height: inherit;
+    background: #FFF;
+    -webkit-transform: rotateY(-180deg);
+    /* setting to 180 causes an unnatural-looking half-flip */
+    transform: rotateY(-179deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /* -- transition is the magic sauce for animation -- */
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out; }
+  .panel:hover .panel_back {
+    z-index: 10;
+    background: #7f7f7f;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg); }
+
+/* -- make sure to declare a default for every property that you want animated -- */
+/* -- general styles, including Y axis rotation -- */
+/* 
+footer {
+  position: absolute;
+  top: 870px;
+  left: 0;
+  width: 1920px;
+  height: 212px;
+  z-index: 11;
+  background: $blueColor;
+  @include opacity(90);
+} */

@@ -1,0 +1,140 @@
+@charset "iso-8859-1";
+/* CSS Document */
+/* Actually, the most interesting starts here...  I mean this is the main block. */
+
+ .main-block {
+   width: auto;
+   background-color: #FFF;
+ 	padding-top: 12px;
+ 	overflow: hidden;
+ }
+   .main-block h1 {
+		font:22px Tahoma, sans-serif;
+		margin: 20px 0;
+   }
+   .main-block p {
+ 		font:14px Tahoma, sans-serif; 
+ 		width: 700px;
+ 		text-align: justify;
+		margin-bottom: 40px;
+		}
+   .main-block h1, .main-block p {      
+	   color: #3f3f3f;
+		}
+	#ins {
+		padding-right: 30px;
+	}
+	#ins #current {
+		font-weight: bold;
+		}
+	#ins #price {
+		display: inline-block;
+		width: 250px;
+		height: 35px;
+		padding-top: 7px;
+		background: #339999;
+		font-size: 24px;
+		color: #FFF;
+		text-align: center;
+		vertical-align: middle;
+		text-decoration: none;
+	}
+	#ins #order {
+		display: inline-block;
+		width: 250px;
+		height: 35px;
+		padding-top: 5px;
+		background: #FFF;
+		outline: 1px #339999 solid;
+		font-size: 24px;
+		color: #339999;
+		text-align: center;
+		vertical-align: middle;
+		text-decoration: none;
+	}
+		#ins #order:hover,
+		#ins #price:hover {
+			background: #99CCCC;
+			color: #C2E0E0;
+		}
+	#ins h1,
+	#ins td a {
+			color: #FF8017;
+			font-size: 14px;
+			}
+	#ins table,
+	#ins td {
+		/* width: auto; */
+		margin-top: 8px;
+		vertical-align: top;
+	}
+	table.description {
+		width: 500px;
+		border: none;
+		float: left;
+	}
+	table.description td {
+		padding: 8px;
+	}
+	tr.blue {
+		background: #B6DFEF;
+	}
+
+	#ins h1 {
+		font-size: 22px;	
+		text-align: left;
+		}
+		
+	#ins td h2,
+	#ins td h3 {
+		font-weight: bolder;
+		margin: 0;
+	}
+	#ins h2,
+	#ins h3,
+	#ins h4,
+	#ins p,
+	#ins td,
+	#ins nav a,
+	#current {
+	  color: #226078;
+	  font: 12px Arial, Helvetica, sans-serif;
+	  text-decoration: none;
+	  text-align: justify;
+	  }
+	  #ins nav a:hover {
+	  text-decoration:underline;
+	  }
+	  #ins h2 {
+	  		font-size: 14px;
+	  		}
+	  #ins h3 {
+	  		font-size: 18px;
+	  		}
+	  #ins h4 {
+	  		font-size: 24px;
+	  		margin: 0 0 0 14px;
+	  		}	
+	  #ins ul {
+   	width: auto;
+		list-style: none;
+		background: #FFF;
+	} 
+	 #ins ul li {
+		display:block;
+		width: 100px;
+		height: 75px;
+		padding-top: 25px;
+		text-align: center;
+		outline: solid 1px #FF8017;
+		margin: 10px 0;	
+	 }
+	 #ins ul li a {
+	   color: #FF8017;
+	   font: 12px Tahoma, sans-serif;
+		text-decoration: none;
+		font-weight: bold;
+	  }
+	 #ins ul>li:hover {
+	 background: #FFD580;
+	  }

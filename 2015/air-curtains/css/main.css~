@@ -1,0 +1,293 @@
+@charset "iso-8859-1";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	}
+	
+header,
+nav,
+section,
+article,
+aside,
+footer {
+  display: block;
+}
+body
+{
+	background-color:#C8C8C8;
+}	
+
+.container { /* The big block contained a lot of things. I mean all of them. */
+		max-width: 1280px;
+		min-width: 1280px;
+		width: 1280px;
+		margin: 0 auto;
+		background: #FFF;
+		overflow: hidden;
+		}
+/* Start of top menu line  with logo, search form, etc. */
+header {
+    width: auto; 
+    color: #014956;
+ 	 height: 95px;
+    background: #F8E4B7;
+    text-align: left;
+	 position: relative;
+	 vertical-align: middle;
+	}
+	header section {			
+		float: left;
+		vertical-align: middle;
+		display: block;		
+		}
+	section#left {
+		width: 427px;
+		padding: 0px;
+		margin: 0px;
+		}
+	section#right {
+		width: 406px;
+		padding: 10px;
+		}
+		section#right td {
+			padding: 0 10px;
+			vertical-align: top;
+		}
+		#logo {
+			position:relative;
+			left: 18px;
+			top: 0px;
+			}
+		#street {
+			position:absolute;
+			left: 173px;
+			top: 50px;				
+			}
+	section#banner {
+		width:400px;
+		margin-top: 13px;
+		text-align: center;
+		vertical-align: middle;
+	   }
+		   header h2 { /* Company phones style */
+				font:20px bold Arial, sans-serif;
+				text-align: left;
+				margin: 0px;
+				padding: 0;
+				}
+			header h3 { /* Company email style */
+				font:14px Arial, sans-serif;
+				font-weight: bold;
+				margin-top: 5px;
+				padding: 0;
+				text-align: left;
+				}		
+			header h4 { /* Company addres style */
+				font:12px Arial, sans-serif;
+				
+				padding: 0;
+				display: inline;
+				}
+
+#left-block {
+      width: 212px;
+    	background: #FBF1DB;
+    	border-right: 3px solid #F8E4B7;
+	   float: left;
+	   overflow:hidden;
+	   position: relative;
+	   z-index: 1;
+	   margin: 0;
+	   padding: 20px;
+	   color: #084E8E;
+	   font-family: Arial, Helvetica, sans-serif;
+	   }	
+	   
+	   #left-block h2,
+	   #left-block h3, {
+	   	font-weight: bold;
+	   	margin: 10px 0;
+	   }
+	   #left-block h3 {
+	   	font-size: 12px;
+	   	margin: 10px 0;
+	   }
+	   #left-block h2{
+	   	   font-size: 16px;
+	   	   margin: 10px 0;
+	   }
+	   #left-block td {
+	   	font-size: 12px;
+	   }
+	   #left-block td input {
+	   	background: #FFF;
+	   	border: 1px solid #CCC;
+	   	padding-left: 5px;
+	   	width: 68px;
+	   	height: 26px;
+	   	color: #777;
+	   	font-size: 12px;
+	   }
+		 #left-block p {
+		 font-size: 12px;
+		 margin: 6px;
+	   }
+			#left-block .chooseType {
+   				height: 30px;
+   				width: 250px;
+   				padding-top: 8px;
+   				}
+   			#left-block .chooseType select {
+   				width: 220px;
+   			}
+				#search {
+					height:25px;
+					width:200px;
+					margin: 30px;
+			   	background: white;
+			   	border: 1px #CCC solid;
+			   	margin: 0 auto;
+				   }
+				   input[type="search"] {
+				   border: none; 
+				   background: white;
+				   outline: none;
+				   -webkit-appearance: none; 
+				   width: 155px; 
+					height:25px;
+				   vertical-align: top;
+				   color: #777;
+				   font: 12px Tahoma, sans-serif;
+				   padding-left: 15px;
+				   }
+				   input[type="submit"] {
+				   width: 21px;
+				   height: 25px;
+				   border: none;
+				   background: url(../i/search.gif) no-repeat right center;
+				   }
+  					input[type="range"] {
+  					width: 200px;
+  					margin-top: 10px;  	
+					}
+					
+/* Well, there are some classes of central block have ended */
+
+/* Actually, the most interesting starts here...  I mean this is the main block. */
+
+ .main-block {
+   color: #07ADCC;
+   background: #FFF;
+ 	text-align: center;
+ 	width: 1024px;
+ 	float: right;
+ 	overflow: hidden;
+ 	}
+  .main-block-center {
+  		width: 930px;
+  		margin: 0 auto;
+  		overflow: hidden;
+ 		}
+   .main-block h1 {
+   	color: #07ADCC;
+		font:22px Tahoma, sans-serif;
+		margin: 50px 0 20px 0;
+   }
+   .main-block p {
+ 		font:14px Tahoma, sans-serif; 
+ 		width: 700px;
+ 		text-align: justify;
+		margin-bottom: 40px;
+		}
+	.main-block nav {
+		width: 250px;
+		height: 220px;
+		background: #F2F2F2;
+		margin: 20px 30px;
+    	display: inline-block;
+    	float: left;
+    	position: relative;
+	   }
+   .main-block nav .unit {
+   	position: absolute;
+   	left: 25px;
+   	top: 10px;
+   	}
+   .main-block nav .unit-logo {
+   	position: absolute;
+   	left: 125px;
+   	top: 10px;
+   	}
+   .main-block nav span {
+   	display: block;
+   	background: #fff;
+   	color: #2D5478;
+   	position: absolute;
+   	left: 13px;
+   	top: 70px;
+    	font: 9px Tahoma, sans-serif;
+    	font-weight: bold;
+    	height:16px;
+    	width: 225px; 
+    	padding-top: 5px;
+	   }
+   .main-block nav p {
+   	position: absolute;
+   	left: 13px;
+   	top: 100px;
+   	width: 225px;
+    	font: 12px Tahoma, sans-serif;
+    	color: #2D5478;
+	   }
+   .main-block nav .chooseType {
+   	position: absolute;
+   	left: 0px;
+   	top: 190px;
+   	background: #C7C7C7;
+   	height: 30px;
+   	width: 250px;
+   	padding-top: 8px;
+   	}
+   .main-block nav .chooseType select {
+   	width: 220px;
+   }
+/* end of central block classes */
+
+footer {
+	width: 1280px;
+	background: #FFE48D;
+	padding: 11px 35px;
+	overflow: hidden;
+	}
+footer ul {
+	width: 1280px;
+}
+footer ul li {
+	display: table-cell;
+	list-style: none;
+	width: 1280px;
+	padding: 0 10px;
+	}	
+		footer p,
+		footer p a {
+		color:#093762;	
+		font:12px Tahoma, Helvetica, sans-serif;
+		text-decoration:none;
+		}
+		footer p a:hover {
+		color:#FFF;
+		text-decoration:underline;		
+		}
+		footer td {
+		vertical-align:top;
+		}
+#underFooter h1{
+	padding:10px 100px;
+	font:16px Tahoma, Helvetica, sans-serif;
+	color:#777;
+	text-align: center;
+	display:block;
+	float:left;
+	}
+	

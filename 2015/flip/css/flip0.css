@@ -1,0 +1,131 @@
+*{
+	margin: 0;
+	padding: 0;
+	}
+header,
+nav,
+main,
+article,
+aside,
+footer {
+  display: block;
+	}
+body {
+	/*	font-family: DejaVu_Sans;*/
+	font-family: 'Ubuntu', sans-serif;/*Шрифт описания*/ o
+background:#FFF;
+	}	
+.container {
+		width: 1920px;
+		height: 1080px;
+	   position: absolute;
+		margin: auto;
+	   top: 0%; left: 0%; bottom: 0%; right: 0%; 
+		}
+
+
+h1 {font-size:3em; margin:.5em 0; text-transform:lowercase; text-shadow:1px 1px 1px rgba(0,0,0,0.5); }
+h2 {text-shadow:1px 1px 1px rgba(0,0,0,0.3); }
+a {color:inherit; }
+p {text-shadow:1px 1px 1px rgba(0,0,0,0.3); }
+p a {color:#fff; }
+p strong,
+p b {color:#fff; }
+
+/*The end of base styles*/
+
+	.panel {
+		float: left;
+		width: 380px;
+		height: 1080px;
+		position: relative;
+		/*font-size: .8em;*/
+
+		-webkit-perspective: 600px;
+		-moz-perspective: 600px;
+						perspective: 600px;
+	}
+	/* -- make sure to declare a default for every property that you want animated -- */
+	/* -- general styles, including Y axis rotation -- */
+	.panel .panel_front {
+		float: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 9;
+		width: inherit;
+		height: inherit;
+		background: #FFF;
+		text-align: center;
+		box-shadow: 0 1px 5px rgba(0,0,0,0.9);
+
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+			 -moz-transform: rotateX(0deg) rotateY(0deg);
+						transform: rotateX(0deg) rotateY(0deg);
+
+		-webkit-transform-style: preserve-3d;
+			 -moz-transform-style: preserve-3d;
+						transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+			 -moz-backface-visibility: hidden;
+						backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+						transition: all .4s ease-in-out;
+	}
+	.panel:hover .panel_front {
+		z-index: 9;
+		border-color: #eee;
+		background: #FFF;
+
+		-webkit-transform: rotateY(180deg);
+			 -moz-transform: rotateY(180deg);
+						transform: rotateY(180deg);
+	}
+
+	.panel .panel_back {
+		float: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 8;
+		width: inherit;
+		height: inherit;
+		background: #FFF;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+
+		-webkit-transform: rotateY(-180deg);
+			 -moz-transform: rotateY(-179deg); /* setting to 180 causes an unnatural-looking half-flip */
+						transform: rotateY(-179deg);
+
+		-webkit-transform-style: preserve-3d;
+			 -moz-transform-style: preserve-3d;
+						transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+			 -moz-backface-visibility: hidden;
+						backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+						transition: all .4s ease-in-out;
+	}
+
+	.panel:hover  .panel_back {
+		z-index: 10;
+		background: #FFF;
+
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+			 -moz-transform: rotateX(0deg) rotateY(0deg);
+						transform: rotateX(0deg) rotateY(0deg);
+
+	}
+
+	
+	.footer {
+	position: absolute;
+	width: 1920px;
+	height: 212px;
+}

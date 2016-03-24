@@ -1,0 +1,148 @@
+.slides {
+    height:270px;
+    overflow:hidden;
+    position:relative;
+    width:500px;
+	}
+	.slides ul {
+    	list-style:none;
+    	position:relative;
+		}
+	.slides ul li h1 {
+		font: 22px Tahoma, sans-serif;
+		color: #FF8017;
+		display: inline;
+		}
+	.slides ul li {
+ 	 	color: #777;
+	 	text-decoration: none;
+	 	font: 16px Tahoma, sans-serif;
+    	}
+    	.slides p {
+    		margin: 12px auto;
+    	}
+    	.slides img {
+    		margin-right: 20px;
+    	}
+    	
+/*@keyframes fadeOut { 
+    0% {
+        opacity:0;
+    }
+    6% {
+        opacity:1;
+    }
+    24% {
+        opacity:1;
+    }
+    30% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}    	
+    	
+    	
+@-webkit-keyframes fadeOut { 
+    0% {
+        opacity:0;
+    }
+    6% {
+        opacity:1;
+    }
+    24% {
+        opacity:1;
+    }
+    30% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}
+@-moz-keyframes fadeOut {
+    0% {
+        opacity:0;
+    }
+    6% {
+        opacity:1;
+    }
+    24% {
+        opacity:1;
+    }
+    30% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+.slides ul li {
+    opacity:0;
+    filter: alpha(opacity=0); /* IE must die! */
+    position:absolute;
+    top:30px;
+
+    /* анимация css3 */
+    -webkit-animation-name: fadeOut;
+    -webkit-animation-duration: 24.0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: fadeOut;
+    -moz-animation-duration: 24.0s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+    
+    -o-animation-name: fadeOut;
+    -o-animation-duration: 24.0s;
+    -o-animation-timing-function: linear;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: normal;
+    -o-animation-delay: 0;
+    -o-animation-play-state: running;
+    -o-animation-fill-mode: forwards; 
+    
+    animation-name: fadeOut;
+    animation-duration: 24.0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0;
+    animation-play-state: running;
+    animation-fill-mode: forwards;  
+}
+
+/* Задержки css3 */
+.slides ul  li:nth-child(2), .slides ul  li:nth-child(2) div {
+    -webkit-animation-delay: 6.0s;
+    -moz-animation-delay: 6.0s;
+    -o-animation-delay: 6.0s;
+    animation-delay: 6.0s;
+}
+.slides ul  li:nth-child(3), .slides ul  li:nth-child(3) div {
+    -webkit-animation-delay: 12.0s;
+    -moz-animation-delay: 12.0s;
+    -o-animation-delay: 12.0s;
+    animation-delay: 12.0s;
+}
+.slides ul  li:nth-child(4), .slides ul  li:nth-child(4) div {
+    -webkit-animation-delay: 18.0s;
+    -moz-animation-delay: 18.0s;
+    -o-animation-delay: 18.0s;
+    animation-delay: 18.0s;
+}*/
+.slides ul li img {
+	float: left;
+}
+

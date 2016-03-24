@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+header, nav, main, article, aside, footer {
+  display: block; }
+
+body {
+  font-family: "Roboto Condensed", sans-serif; }
+
+.container {
+  width: 1899px;
+  height: 1080px;
+  position: absolute;
+  margin: auto;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%; }
+
+.blueColor {
+  background: #1a48a6; }
+
+.greenColor {
+  background: #1ba768; }
+
+.redColor {
+  background: #a71b3b; }
+
+.yellowColor {
+  background: #a6781a; }
+
+h1 {
+  font-size: 3em;
+  margin: .5em 0;
+  text-transform: lowercase;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+
+header {
+  position: relative; }
+  header h2 {
+    display: block;
+    margin: 50px auto;
+    padding-top: 30px;
+    width: 345px;
+    height: 95px;
+    color: #FFF;
+    font-size: 25.6px;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle; }
+    header h2::after {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 195px;
+      left: 45px;
+      width: 286px;
+      height: 8px;
+      filter: blur(18px);
+      -webkit-filter: blur(18px);
+      -o-filter: blur(18px);
+      -moz-filter: blur(18px);
+      background: black; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+p {
+  line-height: 40px;
+  margin-left: 50px; }
+  p a {
+    font-size: 19.2px;
+    color: #FFF;
+    text-transform: uppercase; }
+
+/*The end of base styles*/
+footer {
+  position: absolute;
+  top: 870px;
+  left: 0;
+  width: 1899px;
+  height: 214px;
+  z-index: 11;
+  background: #1a48a6;
+  opacity: 0.9;
+  -webkit-opacity: 0.9;
+  -khtml-opacity: 0.9;
+  -moz-opacity: 0.9;
+  filter: alpha(opacity=90);
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center; }
+  footer .footer_contacts, footer .footer_logo {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    width: 383px;
+    margin-bottom: 45px;
+    font-size: 22.4px; }
+  footer .footer_logo {
+    width: 1110px;
+    margin-top: 62px; }
+  footer .copyright {
+    bottom: 0;
+    font-size: 12.8px;
+    opacity: 0.3;
+    -webkit-opacity: 0.3;
+    -khtml-opacity: 0.3;
+    -moz-opacity: 0.3;
+    filter: alpha(opacity=30); }

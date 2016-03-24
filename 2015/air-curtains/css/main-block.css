@@ -1,0 +1,76 @@
+ .main-block {
+   color: #07ADCC;
+   background: #FFF;
+ 	text-align: center;
+ 	width: 1024px;
+ 	float: right;
+ 	overflow: hidden;
+ 	}
+  .main-block-center {
+  		width: 930px;
+  		margin: 0 auto;
+  		overflow: hidden;
+ 		}
+   .main-block h1 {
+   	color: #07ADCC;
+		font:22px Tahoma, sans-serif;
+		margin: 50px 0 20px 0;
+   }
+   .main-block p {
+ 		font:14px Tahoma, sans-serif; 
+ 		width: 700px;
+ 		text-align: justify;
+		margin-bottom: 40px;
+		}
+	.main-block nav {
+		width: 250px;
+		height: 220px;
+		background: #F2F2F2;
+		margin: 20px 30px;
+    	display: inline-block;
+    	float: left;
+    	position: relative;
+	   }
+   .main-block nav .unit {
+   	position: absolute;
+   	left: 25px;
+   	top: 10px;
+   	}
+   .main-block nav .unit-logo {
+   	position: absolute;
+   	left: 125px;
+   	top: 10px;
+   	}
+   .main-block nav span {
+   	display: block;
+   	background: #fff;
+   	color: #2D5478;
+   	position: absolute;
+   	left: 13px;
+   	top: 70px;
+    	font: 9px Tahoma, sans-serif;
+    	font-weight: bold;
+    	height:16px;
+    	width: 225px; 
+    	padding-top: 5px;
+	   }
+   .main-block nav p {
+   	position: absolute;
+   	left: 13px;
+   	top: 100px;
+   	width: 225px;
+    	font: 12px Tahoma, sans-serif;
+    	color: #2D5478;
+	   }
+   .main-block nav .chooseType {
+   	position: absolute;
+   	left: 0px;
+   	top: 190px;
+   	background: #C7C7C7;
+   	height: 30px;
+   	width: 250px;
+   	padding-top: 8px;
+   	}
+   .main-block nav .chooseType select {
+   	width: 220px;
+   }

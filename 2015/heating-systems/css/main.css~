@@ -1,0 +1,415 @@
+@charset "iso-8859-1";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	}
+	
+header,
+nav,
+section,
+article,
+aside,
+footer {
+  display: block;
+}
+body
+{
+	background-color:#C8C8C8;
+}	
+
+.container /* The big block contained a lot of things. I mean all of them. */
+	{
+		max-width: 1280px;
+		min-width: 1280px;
+		width: 1280px;
+		margin: 0 auto;
+		background: #FFF;
+		overflow: hidden;
+	}
+
+/* Start of top menu line  with logo, search form, etc. */
+.topMenu,
+.topMenu li ul { 
+		display: table-row;
+   	width: 1280px;
+		position: relative;
+		list-style: none;
+    }
+.topMenu {
+	background: #FFF;
+	} 
+
+	 .topMenu>li {
+		display: table-cell;
+		width: auto;
+		height: 45px;
+		vertical-align: bottom;	 	
+		font: 12px Arial, sans-serif;
+		border-left:3px solid #A61D00;
+  		border-bottom:3px solid #A61D00;
+	 }
+	 .topMenu li a {
+		display: table-cell;
+		width: 1280px;
+		height: 45px;
+		vertical-align: middle;
+		text-align: center;
+		}
+	 .topMenu>li>a {
+		 color: #333;
+		 text-decoration: none;
+	  }
+	 .topMenu>li>a:hover {
+		color:#333;
+		background: #B6DFEF;
+	  }
+		   .topMenu li ul {
+		   display:none; 
+		   position: absolute;
+		   width: 180px;		   
+		   z-index: 30;
+		   background: #62B1D0;
+		   }
+		   .topMenu li:hover ul {
+		   display: block;
+		   }
+		   .topMenu li ul li a {
+		   	border-bottom: 2px solid #FFF;
+		   	text-decoration: none;
+		   	padding: 5px 10px;
+		   	width: 160px;
+		   	color: #FFF;
+			text-align:left
+		   	}
+		   	.topMenu li ul li a:hover {
+		   		background: #B6DFEF;
+		   		color: #333;
+		   	}
+header
+{
+ 	 height: 68px;
+    width: auto; 
+    background: #A61D00;
+    color: #FFF;
+    text-align: left;
+	}
+		header section {			
+			padding: 0 18px 0 13px;
+			float: left;
+			vertical-align: middle;
+			}
+				section#left {
+					width: 390px;	
+				}
+				section#right {
+					width: 370px;
+				}
+		 		header h1 /* Company name style */
+				{
+					font:22px Tahoma, sans-serif;
+					margin: 10px 0 0 0;
+				}
+				header img { /* Company logo image */
+					float: left;
+				}
+				header h2 /* Company slogan style */
+				{
+					font:12px Tahoma, sans-serif;
+					text-align: left;
+					margin: 2px 0 0 0;
+				}
+				header h3 /* Company phone style */
+				{
+					font:18px Tahoma, sans-serif;
+					text-align: left;
+					font-weight: normal;
+					margin: 10px 0 10px 70px;
+				}		
+				.search {
+					margin-top: 17px;
+					padding: 0;
+					height:30px;
+					width:435px;
+			   	background: white;
+				   }
+				   input[type="search"] {
+				   border: none; 
+				   background: white;
+				   outline: none;
+				   -webkit-appearance: none; 
+				   width: 397px; 
+					height:30px;
+				   vertical-align: top;
+				   color: #AAA;
+				   font: 12px Tahoma, sans-serif;
+				   }
+				   input[type="submit"] {
+				   width: 33px;
+				   height: 30px;
+				   border: none;
+				   background: url(../i/search-button.gif) no-repeat right center;
+				   cursor: pointer;
+				   }
+
+#dropDown-menu {
+	font:12px Tahoma, sans-serif;
+	list-style:none;
+   width: auto;
+	border-bottom: solid 6px #F9A72D;   
+	outline: solid 3px #0FF;
+	}
+	
+	#dropDown-menu li {
+		float:left;
+		display:block;
+		text-align:center;
+		position:relative;
+		z-index: 10;
+		width: 209px;
+	   }
+			#dropDown-menu li>a {
+				display:block;
+				text-decoration:none;
+				color: #333;
+				background: #B6DFEF;
+				text-decoration: none;
+				width: 100%;
+				border: solid 4px #FFF;
+		      padding: 20px 0;
+				text-align: center;	
+				}
+			#dropDown-menu li:hover>a {
+				color:#333;		    
+				background: #FFF;
+				}
+			#dropDown-menu li .drop {
+				padding-right:21px;
+				}
+
+/* The styles of drop-down begins here */
+
+	.dropdown1, 
+	.dropdown4,
+	.dropdown3, 
+	.dropdown2 {
+		margin:0px auto; /* The distance between bottons and drop-down*/
+		float:left;
+		position:absolute;
+		left:-999em; /* Hides the drop-down */
+		text-align:left;
+		padding:35px 54px; /* Padding in drop-down*/
+		background: #226078;
+		color: #FFF;
+		box-shadow: 3px 3px 20px rgba(0,0,0,0.5); /* the shadow's style */
+	}
+	.dropdown1 img, 
+	.dropdown2 img {
+		position: absolute;
+		left: 92px;
+		top: -10px;
+		}
+	.dropdown3 img, 
+	.dropdown4 img {
+		position: absolute;
+		right: 92px;
+		top: -10px;
+		} 
+	
+	.dropdown1, .dropdown3 {width: 771px;}
+	.dropdown4 {width: 450px;}
+	.dropdown2 {width: 400px;}
+	
+	#dropDown-menu li:hover .dropdown1, 
+	#dropDown-menu li:hover .dropdown4,
+	#dropDown-menu li:hover .dropdown3,
+	#dropDown-menu li:hover .dropdown2 {
+		left:-1px;
+		top:auto;
+		}
+	#dropDown-menu .menu_right {
+		float:right;
+		margin-right:0px;
+		}
+	#dropDown-menu li:hover .align_right {
+		left:auto;
+		right:-1px;
+		top:auto;
+		}
+			#dropDown-menu td {
+				padding: 8px 14px 17px 9px;
+				color: #000;
+				}
+				#dropDown-menu .one {
+				background: #DBE6E2;
+				font-weight: bold;
+				text-align: center;
+				vertical-align: middle;
+				}
+				#dropDown-menu .two {
+				background: #FFF;
+				vertical-align: middle;
+				}
+			#dropDown-menu table {
+				margin-bottom: 10px;
+				width: 100%;
+				}
+			.dropdown1 a:hover {
+				text-decoration: underline;				
+				}
+
+			#dropDown-menu p,
+			#dropDown-menu div a,
+			#dropDown-menu>ul>li {
+				font: 14px Tahoma, Helvetica, sans-serif;
+				text-align:left;
+				display: block;
+				
+				color: #FFF;
+				background: none;
+				}
+			#dropDown-menu div a {
+				text-decoration: none;
+				margin-left: 20px;
+				padding-left: 20px;
+				}
+			#dropDown-menu div a:hover {
+				text-decoration: underline;
+				background: url(../i/arrow-bullet.gif) no-repeat left bottom;
+				}
+			h1,			
+			#dropDown-menu .arrow {
+				font: 22px Tahoma, sans-serif;
+				margin-bottom: 10px;
+				}
+			#dropDown-menu .arrow {
+				display: block;
+				background: url(../i/arrow-blue.gif) no-repeat left bottom;
+				padding-left: 30px;
+				margin: 10px 0;
+			}
+			#dropDown-menu .arrow:hover {
+				display: block;
+				background: url(../i/arrow-blue.gif) no-repeat left bottom;
+				padding-left: 30px;
+				margin: 10px 0;
+			}
+			#dropDown-menu td a,
+			#dropDown-menu td a:hover {
+				font-size: 12px;
+				color: #000;
+				}
+			#dropDown-menu td a {
+				text-decoration: underline;
+				margin-left: 20px;
+				padding-left: 20px;
+				}
+			#dropDown-menu td a:hover {
+				text-decoration: underline;
+				background: url(../i/arrow-bullet-w.gif) no-repeat left bottom;
+				}
+/* Ta-da!!! The header styles are over! */
+
+/* So, there are some central block classes */
+
+.left-block-container {
+	   width: 314px;
+	   background: white;
+	   float: left;
+	   overflow:hidden;
+	   position: relative;
+	   z-index: 1;
+	   margin: 0;
+	   padding: 0;
+	   }	
+	.left-block	{
+   	height: 85px;
+   	max-height: 85px;
+ 		border-bottom: dashed 1px #999;
+ 		text-align: center;
+ 		overflow: hidden;
+ 		vertical-align: middle;
+ 		position: relative;
+		}    
+		 .left-block a {
+			text-decoration: none;
+			height:85px;
+			width: auto;
+	   	display: inline-block;
+	   	}
+	    .left-block img {
+	    	border: none;
+	    	vertical-align: middle;
+	    	position: absolute;
+	      top: 20px;
+	      left: 20px;
+	    	}
+		 .left-block-catalog {
+ 			font: 16px Tahoma, sans-serif;
+	      color: #333;
+	      max-width: 170px;
+ 			position: absolute;
+ 			top: 33px;
+ 			left: 110px;
+		 	}
+		 .left-block-number {
+			font: 30px Tahoma, sans-serif;
+			color: #333;
+			margin-left: 30px;
+			position: absolute;
+			top: 25px;
+			right: 0px;
+			}
+
+/* Well, there are some classes of central block have ended */
+
+
+footer {
+	width: 1280px;
+	background: #226078;
+	margin-top: 50px;
+	padding: 20px;
+	overflow: hidden;
+	}
+	#table1,
+	#table2,
+	#table3,
+	#table4 {
+		float: left;
+		margin: 0;
+		padding:0 10px;
+		}
+	#table1 {
+		width: 440px;
+		}
+	#table2 {
+		width: 245px;
+		}
+	#table3 {
+		width: 245px;
+		}
+	#table4 {
+		width: 270px;
+		}
+		footer p,
+		footer p a {
+		color:#FFF;	
+		font:12px Tahoma, Helvetica, sans-serif;
+		text-decoration:none;		
+		}
+		footer p a:hover {
+		color:#FFF;
+		text-decoration:underline;		
+		}
+		footer td {
+		vertical-align:top;
+		}
+#underFooter h1{
+	padding:10px 100px;
+	font:16px Tahoma, Helvetica, sans-serif;
+	color:#777;
+	text-align: center;
+	display:block;
+	float:left;
+	}
+	

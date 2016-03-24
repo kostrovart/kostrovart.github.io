@@ -1,0 +1,144 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>МЕРПАСА</title>
+<link rel="stylesheet" href="css/main.css">
+<!-- <script src="http://css3playground.com/js/modernizr.min.js"></script> -->
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
+<script src="jquery.js"></script>
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script> -->
+<!-- 
+<script type="text/javascript">   
+$(document).ready(function(){
+
+	var colors = ["redColor", "blueColor", "yellowColor", "greenColor"];
+	var randColors = Math.floor( Math.random() * colors.length );
+	// document.write(randColors);
+	// console.log(randColors);
+
+$('#logo').mouseover(
+	function(){ $("h2,footer").addClass('randColors') }
+)
+});
+
+</script>
+ -->
+ <script type="text/javascript" src="jquery-1.5.min.js"></script>
+<script>
+      var divCont = ["redColor", "yellowColor", "greenColor"];
+      var userDiv = 7, randomDiv; 
+      do { randomDiv = Math.floor ( Math.random () * 3 );
+      } while ( randomDiv == userDiv );
+ 
+$(document).ready(function(){
+$('#logo').mouseover(
+      	function(){ $("h2,footer").addClass(divCont [ randomDiv ]) }
+      
+)
+});                                           
+</script>
+</head>
+<body>
+<div class="container"><header>
+	<div class="hover panel">
+		<div class="panel_front bgPanel1">
+			<h2 class="blueColor">упаковочное оборудование</h2>
+			
+		</div>
+		<nav class="panel_back bgPanel1">
+			<h2 class="blueColor">упаковочное оборудование</h2>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+		</nav>
+	</div>
+	
+	<div class="hover panel">
+		<div class="panel_front bgPanel2">
+			<h2 class="blueColor">упаковочное оборудование</h2>
+			
+		</div>
+		<nav class="panel_back">
+			<h2 class="blueColor">упаковочное оборудование</h2>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+		</nav>
+	</div>
+	
+	<div class="hover panel">
+		<div class="panel_front bgPanel3">
+			<h2 class="blueColor">упаковочное оборудование</h2>
+			
+		</div>
+		<nav class="panel_back">
+			<h2 class="blueColor">упаковочное оборудование</h2>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+		</nav>
+	</div>
+	
+	<div class="hover panel">
+		<div class="panel_front bgPanel4">
+			<h2 class="blueColor">упаковочное оборудование</h2>
+			
+		</div>
+		<nav class="panel_back">
+			<h2 class="blueColor">упаковочное оборудование</h2>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+		</nav>
+	</div>
+	
+	<div class="hover panel">
+		<div class="panel_front bgPanel5">
+			<h2 class="blueColor">упаковочное оборудование</h2>
+			
+		</div>
+		<nav class="panel_back">
+			<h2 class="blueColor">упаковочное оборудование</h2>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+			<p><a href="">упаковка</a></p>
+		</nav>
+	</div>
+	</header><!-- There is end of .panel above. -->
+	<footer class="blueColor">
+		<div class="footer_contacts">(812) 325 26 72</div>
+		<div class="footer_logo">
+			<img id="logo" src="i/logo.png" alt="">
+		</div>
+		<div class="footer_contacts"><a href="mailto:info@merpasa.ru">info@merpasa.ru</a></div>
+	<p class="copyright">2014 &copy МЕРПАСА</p>
+</footer>
+<!-- There is end of div.container below. -->
+</div>
+</body>
+</html>

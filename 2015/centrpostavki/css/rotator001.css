@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+.rotator001 {
+	position: relative;
+	display: none;
+	height: 270px;
+	width: 520px;
+	margin-top: 35px;
+}
+.rotator001 ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.rotator001 ul li {
+	float: left;
+	position: absolute;
+	list-style: none;
+	font-size: 16px;
+	color: #777;
+	text-decoration: none;
+}
+.rotator001 img {
+	width: 200px;
+	height: auto;
+	margin-right: 20px;
+	border: 1px solid #ccc;
+	padding: 4px;
+	background: #FFF;
+	float:left;
+}
+.rotator001 ul li.show {
+	z-index: 50;
+}
+.rotator001 h1 {
+	color: #FF8017;
+	display:/* inline-*/block;
+}
+.rotator001 p {
+	margin: 12px auto;
+}

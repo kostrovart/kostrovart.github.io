@@ -1,0 +1,116 @@
+@charset "iso-8859-1";
+/* CSS Document */
+/* Actually, the most interesting starts here...  I mean this is the main block. */
+
+ .main-block {
+   width: 800px;
+   background-color: #FFF;
+ 	padding-top: 32px;
+ 	margin-left: 344px;
+ 	overflow: hidden;
+ }
+
+	#ins img {
+		padding: 0px;
+		border: 1px solid #777;
+		margin-top: 25px;
+		}
+	#ins #price {
+		display: inline-block;
+		width: 250px;
+		height: 35px;
+		padding-top: 7px;
+		background: #014956;
+		font-size: 24px;
+		color: #FFF;
+		text-align: center;
+		vertical-align: middle;
+		text-decoration: none;
+	}
+	#ins #order {
+		display: inline-block;
+		width: 250px;
+		height: 35px;
+		padding-top: 5px;
+		background: #FFF;
+		outline: 1px #014956 solid;
+		font-size: 24px;
+		color: #014956;;
+		text-align: center;
+		vertical-align: middle;
+		text-decoration: none;
+	}
+		#ins #order:hover,
+		#ins #price:hover {
+			background: #027085;
+			color: #FFF;
+		}
+	#ins h1,
+	#ins td a {
+			color: #CE1400;
+			font-size: 14px;
+			}
+	#ins table,
+	#ins td {
+		/* width: auto; */
+		border: none;
+		margin-top: 20px;
+		padding-left: 10px;
+		vertical-align: top;
+	}
+	table.description {
+		width: 500px;
+		border: none;
+		float: left;
+		margin-right: 10px;
+	}
+	table.description td {
+		padding: 3px 0 3px 0;
+	}
+	tr.blue>td {
+	}
+	table#buttons {
+		border: none;
+		margin: 10px 0 0 420px;
+	}
+		table#buttons td {
+		border: none;
+	}
+	#ins h1 {
+		font-size: 28px;		
+		text-align: left;
+		}
+		
+	#ins td h2,
+	#ins td h3 {
+		font-weight: bolder;
+		margin: 0 0 10px 0;
+	}
+	#ins h2,
+	#ins h3,
+	#ins h4,
+	#ins p,
+	#ins td,
+	#ins nav a,
+	#current {
+	  color: #226078;
+	  font: 12px Arial, Helvetica, sans-serif;
+	  text-decoration: none;
+	  text-align: justify;
+	  }
+	  #ins nav a:hover {
+	  text-decoration:underline;
+	  }
+	#current {
+		font-weight: bolder;
+		}
+	  #ins h2 {
+	  		font-size: 14px;
+	  		}
+	  #ins h3 {
+	  		font-size: 18px;
+	  		}
+	  #ins h4 {
+	  		font-size: 24px;
+	  		margin: 0 0 0 14px;
+	  		}	
