@@ -48,7 +48,7 @@ hr {
   &.star-top {
     border-color: #FFF;
     &:after {
-      background-color:  $lightYellow/1.1;
+      background-color:  $darkYellow/1.1;
       color: #FFF;
     }
   }
@@ -182,8 +182,8 @@ section {
   }
 }
 
-#portfolio {
-  background: $lightYellow/1.1;
+#portfolio, #contact {
+  background: $lightYellow;
   h2 {
     color: $darkRed;
   }
@@ -333,9 +333,9 @@ footer {
 .btn {
   &:focus, &:active, &.active {
     outline: none;
+    
   }
 }
-
 .scroll-top {
   position: fixed;
   right: 2%;
