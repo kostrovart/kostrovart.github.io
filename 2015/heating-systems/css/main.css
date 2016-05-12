@@ -379,13 +379,14 @@ footer {
 		padding:0 10px;
 		}
 	#table1 {
-		width: 440px;
+		width: 460px;
+		height: 40px;
 		}
 	#table2 {
-		width: 245px;
+		width: 235px;
 		}
 	#table3 {
-		width: 245px;
+		width: 235px;
 		}
 	#table4 {
 		width: 270px;

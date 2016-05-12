@@ -1,0 +1,21 @@
+$mainFont:"Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$b: 1px solid #F0F;
+
+// Alternate colors for different purpose. For changing your color scheme just uncomment any according string below.
+// Keep in mind, that ONLY ONE string may  be uncommented!: 
+
+$lightYellow: rgb(238, 186, 48);
+$darkYellow: rgb(211, 166, 37);
+$lightRed: rgb(174, 0, 1);
+$darkRed:rgb(116, 0, 1);
+
+
+// $yellowColor: #FFD304;
+// $redColor: #DD2A2A;
+// $greenColor: #3B8787;
+// @mixin button($red, $green, $blue, $alpha) {
+// 	background: rgba(#{$red},#{$green},#{$blue},#{$alpha});
+// }
+
+// $bgColor: #486DC2; 
+// $borderColor: $bgColor * 1.5;

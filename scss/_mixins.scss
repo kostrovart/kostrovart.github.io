@@ -1,0 +1,97 @@
+// Прозрачность (opacity)
+// Функция получает параметр прозрачности как процент без значка %.
+
+@mixin opacity($p) {
+ opacity: $p*0.01;
+ -webkit-opacity: $p*0.01;
+ -khtml-opacity: $p*0.01;
+ -moz-opacity: $p*0.01;
+ filter:alpha(opacity=$p);
+}
+@mixin bgAlpha($r, $g, $b, $a) {
+background: rgba($r, $g, $b, $a);
+}
+
+// Скругление углов.
+@mixin border-radius($radius) { 
+ border-radius: $radius+px; 
+ -webkit-border-radius: $radius+px; 
+ -moz-border-radius: $radius+px; 
+ -ms-border-radius: ($radius+px / $radius+px); 
+}
+
+// Длительность смены стиля (transition-duration)
+// Время в секундах или милисекундах, которое должна длиться смена CSS-стилей. 
+// этим свойством можно плавно менять цвет ссылок.
+@mixin duration($a) { 
+-webkit-transition-duration: $a+s; 
+-o-transition-duration: $a+s; 
+-moz-transition-duration: $a+s; 
+transition-duration: $a+s; 
+}
+
+// Поворот (rotation)
+
+@mixin rotate($d) { 
+ // transform:rotate($d+deg); 
+ // -ms-transform:rotate($d+deg); 
+ // -webkit-transform:rotate($d+deg); 
+ // -o-transform: rotate($d+deg); 
+    -webkit-transform: rotateY($d+deg);
+    -moz-transform: rotateY($d+deg);
+    -o-transform: rotateY($d+deg);
+    transform: rotateY($d+deg);
+    
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden; 
+}
+
+// Тень объектов (box-shadow)
+// Тень для объекта. В функцию передаются отступ слева, сверху, радиус размытия и цвет тени.
+
+@mixin box-shadow($left, $top, $blur, $color){ 
+ -moz-box-shadow: $left $top $blur $color; 
+ -webkit-box-shadow: $left $top $blur $color; 
+ box-shadow: $left $top $blur $color; 
+}
+
+// Фон с градиентом
+// Эта функция «нарисует» объекту вертикальный кроссбраузерный CSS3 градиент. Передаем верхний цвет и нижний.
+
+@mixin bgradi($top, $btm) {
+ background: $top;
+ background: -moz-linear-gradient(top, $top 0%, $btm 100%);
+ background: -webkit-linear-gradient(top, $top 0%,$btm 100%);
+ background: -o-linear-gradient(top, $top 0%,$btm 100%);
+ background: -ms-linear-gradient(top, $top 0%,$btm 100%);
+ background: linear-gradient(to bottom, $top 0%,$btm 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$btm',GradientType=0 );
+}
+
+// Цвет границ (border-left, right…)
+// Функция получает цвет границы и место (сверху, снизу, слева, справа или со всех сторон), куда его применить к объекту.
+
+@mixin border($place, $color, $width) {
+ @if $place == 'all' {
+ border: $width solid $color;
+ } @else {
+ border-#{$place}: $width solid $color;
+ }
+}
+
+// Размытие по Гауссу
+
+@mixin blur($n) {
+	filter: blur($n+px);
+	-webkit-filter: blur($n+px);
+	-o-filter: blur($n+px);
+	-moz-filter: blur($n+px);
+    filter: url('blur.svg#blurSVG'); 
+}
