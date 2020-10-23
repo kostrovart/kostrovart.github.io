@@ -1,0 +1,47 @@
+body {
+  font-family: Roboto;
+  font-size: 100%;
+  font-weight: 400;
+  max-width: 700px;
+  margin: 6% auto;
+  padding-left: 6%;
+  width: 100%;
+  color: #333;
+  background-color: #eee;
+}
+blockquote  {
+  margin: 3% 0;
+  background-color: #e0e0e0;
+  padding: 2% 3%;
+}
+
+h1 {
+  color: #49f;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+h2 {
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+p, ul {
+  margin: 0px;
+}
+ul {
+}
+
+a {
+  color: #44f;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 430px) {
+  .left,
+  .right {
+    display: none;
+  }
+  .stuff {
+    width: 100%;
+    margin-left: 10px;
+  }
+}
