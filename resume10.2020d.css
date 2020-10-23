@@ -2,19 +2,17 @@ body {
   font-family: Roboto;
   font-size: 100%;
   font-weight: 400;
-  margin: auto;  /*min-width: 50%;*/
+  margin: auto;
+  /*min-width: 50%;*/
   max-width: 700px;
-  color: #2d2d2d;
-  background-color: #e2e2e2;
+  color: #CCC;
+  background-color: #1d1d1d;
 }
-
-blockquote {
-
+blockquote  {
   /*Without borders just fill color */
-
   /*background-color: #e0e0e0;*/
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
   font-size: 120%;
   margin: 20px 0;
   padding: 5%;
@@ -25,35 +23,29 @@ h1 {
   padding: 0;
   margin-bottom: 1%;
 }
-
 h2 {
   font-size: inherit;
   margin-top: 2%;
-  margin-bottom: 1%;  /*font-weight: normal;
+  margin-bottom: 1%;
+  /*font-weight: normal;
   color: #f68a3d;
-  */
-}
-
-/*strong {
-font-weight: normal;
-color: #ab8256;
-}
 */
-p,
-ul {
+}
+/*strong {
+  font-weight: normal;
+  color: #ab8256;
+}
+*/p, ul {
   margin: 0px;
 }
-
 a {
   text-decoration: none;
-  color: #2294d0;
+  color: #4fb0db;
 }
-
 a:hover {
   text-decoration: underline;
-  color: #2294d0;
+  color: #4fb0db;
 }
-
 #switch_thems {
   float: right;
   position: relative;
@@ -68,21 +60,21 @@ a:hover {
   vertical-align: middle;
   text-align: center;  
   text-decoration: none;
-  /*background: #d2d2d2;*/
   border: 1px solid #444;
-  color: #2d2d2d;
+  color: #9C9C9C;
 }
 
   #switch_thems>a:hover {
   width: 120px;
   height: 40px;
   display: table-cell;
-  background: #444;
   border: 1px solid #444;
-  color: #e2e2e2;
+  background: #d2d2d2;
+  color: #2d2d2d;
 }
 
 #bg {
   padding: 75px 60px;
-  background-color: #d2d2d2;  
+  background-color: #2d2d2d;
+  /*border: 1px solid #CCC;*/
 }
