@@ -45,7 +45,7 @@ a:hover {
   float: right;
   position: relative;
   top: -40px;
-  left: 20px;
+  left: 0;
 }
 
 #switch_thems a {
@@ -69,7 +69,7 @@ a:hover {
 }
 
 #bg {
-  padding: 75px 60px;
+  padding: 75px 45px 75px 60px;
   background-color: #2d2d2d;
 }
 
@@ -81,7 +81,7 @@ a:hover {
 
   #switch_thems {
     top: -45px;
-    left: 10px;
+    left: 15px;
     font-size: 80%;
   }
 

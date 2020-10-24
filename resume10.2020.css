@@ -63,13 +63,13 @@ a:hover {
   width: 120px;
   height: 40px;
   display: table-cell;
-  background: #444;
   border: 1px solid #444;
+  background: #444;
   color: #e2e2e2;
 }
 
 #bg {
-  padding: 75px 60px;
+  padding: 75px 45px 75px 60px;
   background-color: #d2d2d2;
 }
 
@@ -81,7 +81,7 @@ a:hover {
 
   #switch_thems {
     top: -45px;
-    left: 10px;
+    left: 15px;
     font-size: 80%;
   }
 
