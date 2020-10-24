@@ -3,14 +3,12 @@ body {
   font-size: 100%;
   font-weight: 400;
   margin: auto;
-  /*min-width: 50%;*/
   max-width: 700px;
   color: #CCC;
   background-color: #1d1d1d;
 }
-blockquote  {
-  /*Without borders just fill color */
-  /*background-color: #e0e0e0;*/
+
+blockquote {
   border-top: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
   font-size: 120%;
@@ -23,34 +21,31 @@ h1 {
   padding: 0;
   margin-bottom: 1%;
 }
+
 h2 {
   font-size: inherit;
   margin-top: 2%;
-  margin-bottom: 1%;
-  /*font-weight: normal;
-  color: #f68a3d;
-*/
 }
-/*strong {
-  font-weight: normal;
-  color: #ab8256;
-}
-*/p, ul {
+
+ul {
   margin: 0px;
 }
+
 a {
   text-decoration: none;
   color: #4fb0db;
 }
+
 a:hover {
   text-decoration: underline;
   color: #4fb0db;
 }
+
 #switch_thems {
   float: right;
   position: relative;
   top: -40px;
-  left: 0;
+  left: 20px;
 }
 
 #switch_thems a {
@@ -58,13 +53,13 @@ a:hover {
   height: 40px;
   display: table-cell;
   vertical-align: middle;
-  text-align: center;  
+  text-align: center;
   text-decoration: none;
   border: 1px solid #444;
   color: #9C9C9C;
 }
 
-  #switch_thems>a:hover {
+#switch_thems>a:hover {
   width: 120px;
   height: 40px;
   display: table-cell;
@@ -76,5 +71,32 @@ a:hover {
 #bg {
   padding: 75px 60px;
   background-color: #2d2d2d;
-  /*border: 1px solid #CCC;*/
+}
+
+@media screen and (max-width:400px) {
+  body {
+    font-family: Montserrat;
+    font-size: 80%;
+  }
+
+  #switch_thems {
+    top: -45px;
+    left: 10px;
+    font-size: 80%;
+  }
+
+  #switch_thems a {
+    width: 96px;
+    height: 32px;
+  }
+
+  #switch_thems>a:hover {
+    width: 96px;
+    height: 32px;
+  }
+
+  #bg {
+    padding: 60px 30px;
+  }
+
 }
